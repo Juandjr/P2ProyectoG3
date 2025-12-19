@@ -27,10 +27,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // Seed data for buses, paradas and their relaciones
-        $this->call([
-            BusesSeeder::class,
-            ParadasSeeder::class,
-            ParadasBusSeeder::class,
-        ]);
+            $this->call([
+                BusesSeeder::class,
+                ParadasSeeder::class,
+                ParadasBusSeeder::class,
+                AdminUserSeeder::class,
+            ]);
     }
 }
